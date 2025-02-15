@@ -80,7 +80,7 @@ if __name__ == "__main__":
     grammar = Grammar(VN, VT, P)
 
     print("Generate already valid strings:")
-    generated_strings = [print(grammar.generate_valid_string()) for _ in range(5)]
+    [print(grammar.generate_valid_string()) for _ in range(5)]
 
     print("\nTesting random strings:")
     test_strings = ["aba", "aaba", "ababa", "aaa", "abba", "ababaaa"]
