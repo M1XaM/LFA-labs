@@ -38,11 +38,12 @@ if __name__ == "__main__":
 ```
 
 Our output looks like this:
+
 <img src="lab1_output.png">
 
 
 ## Conclusions
-In this laboratory, I've succesfully implemented given grammar to create finite automata, which demonstrated the practical relationship between formal language theory and computational models. This project highlighted the main principles of automata theory.
+In this laboratory, I've successfully implemented given grammar to create finite automata, which demonstrated the practical relationship between formal language theory and computational models. This project highlighted the main principles of automata theory.
 
 ## References
 1. Lecture notes
