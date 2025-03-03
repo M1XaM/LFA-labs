@@ -33,7 +33,9 @@ This function `is_deterministic()` determines whether a finite automaton is dete
 * The conversion NFA to DFA
 This `convert_to_dfa()` function implements the subset construction algorithm to transform a non-deterministic finite automaton (NFA) into its equivalent deterministic finite automaton (DFA). The code begins by initializing empty sets for the DFA components (`dfa_states`, `dfa_transitions`, `dfa_final_states`) and starts the construction with the NFA's start state, creating a `start_state_set = frozenset([self.start_state])`. It employs a breadth-first approach with `unmarked_states = [start_state_set]` to systematically process all reachable state combinations. For each state set, the algorithm determines if it should be marked as final by checking if "any(state in self.final_states for state in current_state_set)". The core conversion happens as the function processes each alphabet symbol, where it computes the combined transitions with `next_state_set.update(self.full_transitions[(state, symbol)])` to determine where the NFA could move from the current state set on a given symbol. Each discovered state set becomes a single DFA state, represented as a frozen set for immutability. The transitions are built incrementally with `dfa_transitions[(current_state_set, symbol)] = {next_state_set}`, and newly discovered state sets are added to `unmarked_states` for further processing. The function elegantly handles the case of no transitions with `if not next_state_set: continue`. Upon completion of the subset construction, the function returns a new `FiniteAutomata` object representing the equivalent DFA with the constructed components.
 
+
 Our output looks like this:
+
 <img src="lab2_output.png">
 
 ## Conclusions
