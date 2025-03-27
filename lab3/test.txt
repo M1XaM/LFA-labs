@@ -1,0 +1,5 @@
+    x = 10.5
+    y = 20
+    z = sin(3.14)
+    result = x + y * 2
+    trig = cos(0)
