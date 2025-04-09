@@ -1,7 +1,7 @@
 # Laboratory Work #4: Regular expressions
 ### Course: Formal Languages & Finite Automata
-### Author: Isacescu Maxim, FAF-211
-Variant: 4
+### Author: Isacescu Maxim, FAF-231
+### Professors: Cretu Dumitru, Irina Cojuhari
 
 ## Theory
 A regex pattern generator is a computational tool designed to interpret structured patterns and produce all valid strings that conform to the specified rules. Unlike traditional regex engines that match patterns in existing text, this generator operates inversely, creating strings based on the pattern’s syntax. The core constructs it processes include groups, quantifiers, and repeats. Groups, denoted as `(A|B)`, define alternative elements, allowing the generator to branch into multiple string possibilities. Quantifiers such as `?` (optional, 0 or 1 occurrence), `*` (Kleene star, 0 to n occurrences), and `+` (positive closure, 1 to n occurrences) introduce variability in repetition. Fixed repeats like `{3}` enforce exact duplication of preceding elements. The generator also handles multi-digit literals (e.g., `24`) as atomic units. Underlying this process is the principle of Cartesian products, where combinations of parsed components are systematically expanded to generate exhaustive string permutations within predefined bounds, ensuring computational feasibility.
