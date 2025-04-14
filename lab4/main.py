@@ -1,5 +1,3 @@
-#Variant 4 Vladimir Vitcovschii
-
 class RegexMachine:
     MAX_REPEAT = 5  # Used for '*' and '+'
 
