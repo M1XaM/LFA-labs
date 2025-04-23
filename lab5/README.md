@@ -48,9 +48,11 @@ By applying these transformations sequentially, the grammar is transformed into 
 
 
 Input (V18):
+
 <img src="input.png">
 
 Output:
+
 <img src="output.png">
 
 
