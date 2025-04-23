@@ -46,11 +46,14 @@ By applying these transformations sequentially, the grammar is transformed into 
 
 ## Results
 
-<img src="output.png">
 
+Input (V18):
 <img src="input.png">
+
+Output:
+<img src="output.png">
 
 
 ## Conclusions
-Converting a context-free grammar to Chomsky Normal Form is a fundamental step in formal language processing, enabling efficient parsing and analysis by standard algorithms. Through systematic elimination of null, unit, and useless productions, and restructuring of rules into binary or terminal forms, any valid grammar can be normalized into CNF. This structured approach not only simplifies the grammar's structure but also lays the groundwork for further computational applications like syntax analysis, parsing, and automaton construction.
+Converting a context-free grammar to Chomsky Normal Form is a fundamental step in formal language processing, enabling efficient parsing and analysis by standard algorithms. By systematically eliminating null, unit, and useless productions and restructuring rules into binary or terminal forms, any valid grammar can be normalized into CNF. This structured approach not only simplifies the grammar's structure but also lays the groundwork for further computational applications like syntax analysis, parsing, and automaton construction.
 
